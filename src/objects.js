@@ -13,5 +13,5 @@ console.log("I am born in", person.yearOfBirth);
 
 // Looping an object
 for(let key in person){
-    console.log("key is", key, "and value is", person[key]);
+    console.log("key is", key, "and value is", person[ke]);
 }

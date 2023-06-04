@@ -11,5 +11,19 @@ const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PR
 let databaseCredential = "devuser:password";
 
 // Task: Add code here
+switch (env.toUpperCase()){
+    case "DEV":
+        databaseCredential = "devuser:password";
+        break;
+    case "STAGE":
+        databaseCredential = "stageuser:password";
+        break;
+    case "PROD":
+        databaseCredential = "produser:password";
+        break;
+    default:
+        databaseCredential = "invalid input"
+        break;
+}
 
 console.log(`Database credential for environment ${env} is ${databaseCredential}`);
